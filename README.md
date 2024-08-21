@@ -1,2 +1,1 @@
-# beginner-to-advanced-
-beginner to advanced level move coding
+#Some coding that helps to move from beginner to advanced level
