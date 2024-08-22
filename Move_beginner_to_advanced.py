@@ -20,7 +20,7 @@ def reverse_seq(n):
 print(reverse_seq(5))
 print(reverse_seq(3))
         
-
+ 
 #We need a function that can transform a number (integer) into a string.
 def number_to_string(num):
     return str(num)
