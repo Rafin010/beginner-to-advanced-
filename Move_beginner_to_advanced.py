@@ -81,7 +81,42 @@ print(lovefunc(4, 5))
 print(lovefunc(2, 4))  
 print(lovefunc(7, 3))  
 
+'''
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. 
+It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
 
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. 
+RNA differs slightly from DNA its chemical structure and contains no Thymine. 
+In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+
+Create a function which translates a given DNA string into RNA.
+'''
+def dna_to_rna(dna):
+    return dna.replace("T", "U")
+dna_string = "GATTACA"
+run_string = dna_to_rna(dna_string)
+print(run_string)
+
+'''
+After a hard quarter in the office you decide to get some rest on a vacation. So you will book a flight for you and your girlfriend and try to leave all the mess behind you.
+
+You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers.
+
+Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+
+Write a code that gives out the total amount for different days(d).
+'''
+def car_rental_cost(d):
+    if d >= 7:
+        return 40 * d - 50
+    elif d >= 3:
+         return 40 * d - 20
+    else:
+        return 40 * d
+
+days = int(input("Enter the number of days you want to rent the car: "))
+total_cost = car_rental_cost(days)
+print(f"The total cost for {days} days is ${total_cost}.")
 
     
 
