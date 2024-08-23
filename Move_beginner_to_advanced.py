@@ -18,7 +18,7 @@ def simple_multiplication(number):
 def reverse_seq(n):
    return list(range(n, 0, -1))
 print(reverse_seq(5))
-print(reverse_seq(3))
+print(reverse_seq(3))=
         
  
 #We need a function that can transform a number (integer) into a string.
