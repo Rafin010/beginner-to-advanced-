@@ -18,7 +18,7 @@ def simple_multiplication(number):
 def reverse_seq(n):
    return list(range(n, 0, -1))
 print(reverse_seq(5))
-print(reverse_seq(3))=
+print(reverse_seq(3))
         
  
 #We need a function that can transform a number (integer) into a string.
@@ -117,6 +117,16 @@ def car_rental_cost(d):
 days = int(input("Enter the number of days you want to rent the car: "))
 total_cost = car_rental_cost(days)
 print(f"The total cost for {days} days is ${total_cost}.")
+
+#You get an array of numbers, return the sum of all of the positives ones.
+#আপনি সংখ্যার একটি অ্যারে পাবেন, সমস্ত ধনাত্মকগুলির সমষ্টি ফেরত দিন।
+def sum_positives(arr):
+    return sum([i for i in arr if i > 0])
+
+print(sum_positives([1, -4, 7, 12])) 
+print(sum_positives([-3, -2, 0, 5, 10])) 
+print(sum_positives([-1, -2, -3])) 
+print(sum_positives([0, 1, 2, 3])) 
 
     
 
