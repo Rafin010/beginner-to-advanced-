@@ -129,4 +129,43 @@ print(sum_positives([-1, -2, -3]))
 print(sum_positives([0, 1, 2, 3])) 
 
     
+#Write a function to split a string and convert it into an array of words.
 
+#"Robin Singh" ==> ["Robin", "Singh"]
+#"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+string1 = "Robin Singh"
+string2 = "I love arrays they are my favorite"
+
+word1 = string1.split()
+word2 = string2.split()
+
+print(word1)
+print(word2)
+
+#Given an array of integers, return a new array with each value doubled.
+
+def maps(a):
+    return a * 2
+num = [1, 2, 3]
+test = list(map(maps, num))
+print(test)
+
+
+'''
+Write a function which calculates the average of the numbers in a given list.
+Note: Empty arrays should return 0.
+'''
+'''
+numbers = [30, 55, 3, 10, 2]
+average = sum(numbers)/len(numbers)
+print("Average of list: ", round(average,3))
+'''
+def find_average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers)/len(numbers)
+
+numbers_list = [20,10,30,40,60,50,90,80,70]
+avarage = find_average(numbers_list)
+print(f"The avarage number is: {avarage}")
