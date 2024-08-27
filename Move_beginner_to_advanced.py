@@ -170,3 +170,6 @@ def find_average(numbers):
 numbers_list = [20,10,30,40,60,50,90,80,70]
 avarage = find_average(numbers_list)
 print(f"The avarage number is: {avarage}")
+
+test = "Hi  / Hello"
+print(test)
