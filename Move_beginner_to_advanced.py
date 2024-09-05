@@ -169,3 +169,53 @@ def find_average(numbers):
 numbers_list = [20,10,30,40,60,50,90,80,70]
 avarage = find_average(numbers_list)
 print(f"The avarage number is: {avarage}")
+
+#1. Create a loop that iterates over the list [-1, 2, 3, 0, -4] and checks whether each number is positive or negative
+
+number = [-1,2,3,0,-4]
+
+for i in number:
+    if i > 0:
+        print(f"{i} is positive")
+    elif i < 0:
+        print(f"{i} is negative")
+    else:
+        print(f"{i} is neither positive nor negative")
+
+
+#2. Create a loop that iterates over the list ["France", "Japan", "USA"] and searches for “USA” in the list
+
+
+countries  = ["France", "Japan", "USA"]
+
+for country in countries:
+    if "USA" in country:
+        print(f"Found: {country}")
+
+#3. Create a loop that iterates over the list [1, 10, 9, 4] and checks whether each number is greater than 3
+
+num1 = [1, 10, 9, 4]
+
+for n in num1:
+    if n > 3:
+        print("is True")
+    else:
+        print("is False")    
+
+#4. Create code with a nested loop that searches the list of lists [[50, 48, -40], [57, 99, 80], [49, 40, 45]] and prints out all the numbers greater than or equal to 50
+
+list_of_lists = [[50, 48, -40], [57, 99, 80], [49, 40, 45]]
+
+for sublist in list_of_lists:
+    for j in sublist:
+        if j >= 50:
+            print(j)
+
+#5. Create a loop to check whether the list [3, 5, 11, 12, 1] contains at least one number higher than 10, and print “This list contains a number higher than 10” if it does. Include a break statement. 
+
+list_ = [3, 5, 11, 12, 1]
+
+for num in list_:
+    if num > 10:
+        print(f"{num} is greater than 10")
+        break
