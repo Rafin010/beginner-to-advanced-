@@ -119,7 +119,6 @@ total_cost = car_rental_cost(days)
 print(f"The total cost for {days} days is ${total_cost}.")
 
 #You get an array of numbers, return the sum of all of the positives ones.
-#আপনি সংখ্যার একটি অ্যারে পাবেন, সমস্ত ধনাত্মকগুলির সমষ্টি ফেরত দিন।
 def sum_positives(arr):
     return sum([i for i in arr if i > 0])
 
@@ -170,7 +169,7 @@ numbers_list = [20,10,30,40,60,50,90,80,70]
 avarage = find_average(numbers_list)
 print(f"The avarage number is: {avarage}")
 
-#1. Create a loop that iterates over the list [-1, 2, 3, 0, -4] and checks whether each number is positive or negative
+#Create a loop that iterates over the list [-1, 2, 3, 0, -4] and checks whether each number is positive or negative
 
 number = [-1,2,3,0,-4]
 
@@ -216,6 +215,6 @@ for sublist in list_of_lists:
 list_ = [3, 5, 11, 12, 1]
 
 for num in list_:
-    if num > 10:
+    if num >= 10:
         print(f"{num} is greater than 10")
         break
