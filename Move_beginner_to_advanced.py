@@ -1,5 +1,4 @@
 #Write a function which converts the input string to uppercase.
-# hello bro
 from audioop import add
 from shlex import join
 
@@ -182,7 +181,7 @@ for i in number:
         print(f"{i} is neither positive nor negative")
 
 
-#2. Create a loop that iterates over the list ["France", "Japan", "USA"] and searches for “USA” in the list
+# Create a loop that iterates over the list ["France", "Japan", "USA"] and searches for “USA” in the list
 
 
 countries  = ["France", "Japan", "USA"]
@@ -191,7 +190,7 @@ for country in countries:
     if "USA" in country:
         print(f"Found: {country}")
 
-#3. Create a loop that iterates over the list [1, 10, 9, 4] and checks whether each number is greater than 3
+# Create a loop that iterates over the list [1, 10, 9, 4] and checks whether each number is greater than 3
 
 num1 = [1, 10, 9, 4]
 
@@ -201,7 +200,7 @@ for n in num1:
     else:
         print("is False")    
 
-#4. Create code with a nested loop that searches the list of lists [[50, 48, -40], [57, 99, 80], [49, 40, 45]] and prints out all the numbers greater than or equal to 50
+# Create code with a nested loop that searches the list of lists [[50, 48, -40], [57, 99, 80], [49, 40, 45]] and prints out all the numbers greater than or equal to 50
 
 list_of_lists = [[50, 48, -40], [57, 99, 80], [49, 40, 45]]
 
@@ -210,7 +209,7 @@ for sublist in list_of_lists:
         if j >= 50:
             print(j)
 
-#5. Create a loop to check whether the list [3, 5, 11, 12, 1] contains at least one number higher than 10, and print “This list contains a number higher than 10” if it does. Include a break statement. 
+#Create a loop to check whether the list [3, 5, 11, 12, 1] contains at least one number higher than 10, and print “This list contains a number higher than 10” if it does. Include a break statement. 
 
 list_ = [3, 5, 11, 12, 1]
 
@@ -218,3 +217,28 @@ for num in list_:
     if num >= 10:
         print(f"{num} is greater than 10")
         break
+
+
+#Create a loop to check whether the list of lists [[1, 3, 9], [3, 2], [4, 2]] contains any lists that a(contain exactly two items, and b) the sum of the items is not greater than 5. Include a continue statement.
+
+nested_list = [[1, 3, 9], [3, 2], [4, 2]]  
+
+for sublist in nested_list:  
+    if len(sublist) == 2:  
+        if sum(sublist) <= 5:  
+            print(f"Found a sublist with exactly two items and sum <= 5: {sublist}")  
+        else:  
+            print(f"Found a sublist with exactly two items but sum > 5: {sublist}")  
+    else:  
+        continue
+
+
+#Create code that includes a loop which iterates over the list [1, 5, 2, 6] and prints “The sum of the numbers in the list is 14” at the end. Use the += operator, and a variable which is instantiated outside the loop, but modified inside it
+
+numbers = [1, 5, 2, 6]
+total_sum = 0
+
+for num in numbers:
+    total_sum += num  
+
+print(f"The sum of the numbers in the list is {total_sum}")
