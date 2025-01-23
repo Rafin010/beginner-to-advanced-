@@ -30,6 +30,7 @@ bmi_category = bmi(weight, height)
 
 print(f"BMI: {bmi_value:.2f}")
 print(f"Category: {bmi_category}")
+# puking
 
 
 
