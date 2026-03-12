@@ -242,3 +242,7 @@ for num in numbers:
     total_sum += num  
 
 print(f"The sum of the numbers in the list is {total_sum}")
+
+
+
+#This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
